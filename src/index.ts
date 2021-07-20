@@ -27,7 +27,9 @@ export function tokenMiddleware(options: tokenOptions): Koa.Middleware {
     }
 
     if (!token) {
-      ctx.throw(403, 'Token is required')
+      ctx.throw(403, 'The request is missing an authentication token', {
+        code: 'TOKEN_REQUIRED',
+      })
     }
 
     let targetToken = ''
@@ -41,7 +43,9 @@ export function tokenMiddleware(options: tokenOptions): Koa.Middleware {
     const isValid = token === targetToken
 
     if (!isValid) {
-      ctx.throw(401, 'Invalid token')
+      ctx.throw(401, 'Invalid token', {
+        code: 'TOKEN_INVALID',
+      })
     }
 
     return next()
