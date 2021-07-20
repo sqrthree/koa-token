@@ -28,3 +28,9 @@ app.use(
 ### token: `string | () => string | Promise<string>`
 
 String or function to get target token.
+
+---
+
+> [sqrtthree.com](https://sqrtthree.com/) &nbsp;&middot;&nbsp;
+> GitHub [@sqrthree](https://github.com/sqrthree) &nbsp;&middot;&nbsp;
+> Twitter [@sqrtthree](https://twitter.com/sqrtthree)
