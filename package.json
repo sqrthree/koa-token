@@ -1,0 +1,33 @@
+{
+  "name": "@sqrtthree/koa-token",
+  "description": "A token middleware for Koa",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "npm run type-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqrthree/koa-token.git"
+  },
+  "keywords": [],
+  "author": "sqrtthree <imsqrtthree@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sqrthree/koa-token/issues"
+  },
+  "homepage": "https://github.com/sqrthree/koa-token#readme",
+  "dependencies": {
+    "koa": "~2.13.1",
+    "lodash": "~4.17.21"
+  },
+  "devDependencies": {
+    "@types/koa": "~2.13.4",
+    "@types/lodash": "~4.14.171",
+    "typescript": "~4.3.5",
+    "@sqrtthree/tsconfig": "~1.0.0"
+  }
+}
